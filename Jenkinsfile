@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+    tools{
+        gradle 'Gradle'
+    }
 
     stages {
         stage('run frontend') {
